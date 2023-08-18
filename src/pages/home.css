@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
+:root{
+	--mainBg: #0632BE;
+    --card: #777;
+    --darkerColor: #555;
+    --sideBar: #242730;
+    --faded: #A9ACBB;
+    --success: #00A925;
+    --danger: #ED1818;
+    --text: #4C506B;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.sidebarCont{
+    height: 100%;
+}
+main {
+display: flex;
+flex-wrap: nowrap;
+height: 200vh;
+height: -webkit-fill-available;
+}
+.sidebar,
+.content{
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 2rem;
+    margin-bottom: 12rem;
+    position: sticky;
+    left: 0;
+}
+.sidebar p{
+    margin-left: 1.5rem;
+    font-weight: bolder;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 10rem;
+}
+.header{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-pills .nav-item .nav-link.custom{
+    color: #222;
+}
+.nav-pills .nav-item .nav-link.active{
+    background-color: #999;
+    color: #fff;
+}
+.nav-pills .nav-item .nav-link.custom.active{
+    background-color: #fff;
+    color: var(--mainBg);
+}
+.last{
+    margin-bottom: 1rem;
+}
+.support{
+    height: 50vh;
+    display: flex;
+    margin-left: 2rem;
+}
+.supAndLog{
+    justify-content: center;
+}
+.searchInput{
+    width: 30rem
+}
+.search{
+    display: flex;
+}
+.searchInput::placeholder{
+    text-align: right;
+    padding-right: 30px;
+}
+.searchIcon{
+    transform: translate(-30px, 9px);
+    cursor: pointer;
+}
+.imgs,
+.user{
+    padding: 7px;
+}
+.user{
+    width: 200px;
+    height: 25px;
+}
+.user .text{
+    font-size: 12px;
+    line-height: 2;
+}
+.user{
+    display: flex;
+    transform: translateY(-5px);
+}
+.user img{
+    width: 1.50rem;
+    height: 1.50rem;
+    margin-right: 12px;
+    margin-top: 7px;
+    /* align-self: center; */
+    justify-self: center;
+}
+.title{
+    font-weight: 700;
+}
+.imgs img{
+    margin-right: 3rem;
+}
+img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 988px){
+    .search,
+    .sidebar{
+        display: none;
+    }
+    .content{
+        margin: 3rem; 
+    }
+} 
+.accountCard p,
+.accountCard span,
+.activeDomains p,
+.activeDomains span,
+.activeDomains span a,
+.topTxt p,
+.topTxt h3{
+    font-family: 'DM Sans', sans-serif;
+}
+.Tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+}
+.flexCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    margin-left: 2rem;
+}
+.mainCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+.flexCont span{
+    width: 50px;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
+.domainContTab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+    /* height: 100%; */
+}
+.domainContTab span{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.flex,
+.tableHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+.tableHead{
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.tableHead span{
+    color:var(--faded);
+}
+.house{
+    color: var(--mainBg);
+}
+.change{
+    margin-right: 20px;
+}
+.changeT{
+    width: 8rem;
+}
+.accountCard{
+    width: 62rem;
+    height: 22rem;
+    border-radius: 12px;
+    box-shadow: 0px 2px 24px 10px rgba(0, 0, 0, 0.08);
+}
+.table{
+    width: 62rem;
+    border-radius: 12px;
+    box-shadow: 0px 2px 24px 10px rgba(0, 0, 0, 0.08);
+}
+.topTxt{
+    padding: 1.5rem 2rem;
+}
+.topTxt p{
+    font-weight: 100;
+    font-size: 14px;
+}
+.topTxt h3{
+    font-weight: 500;
+    font-size: 35px;
+}
+.Txtcontent{
+    position: relative;
+}
+.Txtcontent .dummyGraph{
+    position: relative;
+    margin-top: -5%;
+}
+.captions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-self:flex-end;
+    transform: translateY(2.5rem);
+}
+.tableContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.activeDomains{
+    color: var(--mainBg);
+}
+.activeDomains h4{
+    margin-bottom: 1rem;
+}
+/* .hostedContent{
+    transform: translateX(-3.5rem);
+}
+.watchListContent{
+    transform: translateX(-1rem)
+}
+.statusContent{
+    transform: translateX(-1.5rem);
+}
+.actionContent{
+    transform: translateX(-.6rem);
+} */
+.hostedContent,
+.actionContent,
+.statusContent,
+.watchListContent{
+    /* transform: translateX(-2rem); */
+}
+.Coin{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+.btnAction{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.4375rem;
+    background: #00A925;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    background: var(--success);
+    border: 0;
+    outline: 0;
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 3rem;
+    cursor:default;
+    margin-bottom: .8rem;
+}
+.watchListContent{
+    margin-bottom: .5rem;
+}
+.btnAction:hover {
+    cursor:default;
+}
+.statusContent span{
+    margin-bottom: 1.8rem;
+}
+.flexCont{
+    position: relative;
+}
+.flexCont.tabs{
+    width: 60rem;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.flexCont.tabs:nth-child(2) .hostedContent{
+    /* transform: translateX(-28px); */
+}
+.bIconImg{
+    /* margin-right: 15px; */
+}
+.hostedContent{
+    
+}
+.danger{
+    background: var(--danger);
+}
+.watchListContent a{
+    color: var(--text);
+    transition: .3s ease-in-out;
+}
+.watchListContent a:hover{
+    color: var(--mainBg);
+}
+table{
+    border-radius: 12px;
+}
+.flez{
+    display: flex;
+    flex-direction: column;
+}
+.flez td{
+    margin-bottom: .5rem;
+ }
+.margin{
+    margin-right: 2rem;
+}
+tbody{
+    padding: 3rem;
+}
+td{
+    border: 0;
+}
+.statusContent{
+    margin-bottom: 1.8rem;
+}
