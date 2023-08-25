@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
+import Reviews from '../components/reviews.js';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -627,6 +628,9 @@ function Home() {
                              </tbody>
                         </table>
                       </div>
+                <div className="section"> 
+                    <Reviews />
+                    </div>
                     </Tab.Pane>
                   <Tab.Pane eventKey="config">
                         <p className='display-1'>
