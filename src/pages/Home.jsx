@@ -5,9 +5,13 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import Search from 'react-bootstrap-icons/dist/icons/search';
 import {HouseDoor} from 'react-bootstrap-icons';
-
+import {AiOutlineDesktop, AiOutlineMobile} from 'react-icons/ai';
+import {FiTablet} from "react-icons/fi"
+import {BsCalendar4} from "react-icons/bs"
 function Home() {
     return (
         <>
@@ -160,13 +164,150 @@ function Home() {
                         </p>
                     </Tab.Pane>
                   <Tab.Pane eventKey="insight">
-                    <div className="TwoCards">
-                        <div className="usageLimit">
-
+                    <div className="TwoCards d-flex">
+                        <div className="usageLimit mb-5 d-flex flex-column">
+                            <div className="usageTxt ms-3 mb-4">
+                            <h3 className='mb-3'>Usage Limit</h3>
+                            <div className="users">
+                          <AiOutlineDesktop size={20} fontWeight={15} color="#0632BE" className='me-2 desktop'/>  <h6>Desktop Users Report</h6>
+                            </div>
+                            <div className="users">
+                                <FiTablet className='me-2'/> <h6>Tablet Browser Type</h6>
+                            </div>
+                            <div className="users">
+                                <AiOutlineMobile className='me-2'/> <h6>Mobile Users</h6>
+                            </div>
+                            </div>
+                            <div className="usageBars mx-3">
+                                <div className="pageViews">
+                                    <h5>Page Views</h5>
+                                <div className='pageViewsProgress'>
+                                    <div className="pageViewsProgressBar"></div>
+                                </div>
+                                </div>
+                                <div className="remediation">
+                                    <h5>Remediation</h5>
+                                <div className='remediationProgress'>
+                                    <div className="remediationProgressBar"></div>
+                                </div>
+                                </div>
+                                <div className="Avg mt-2">
+                                    <h5>Avg run time per user</h5>
+                                <div className='avgProgress'>
+                                    <div className="avgProgressBar"></div>
+                                </div>
+                                </div>
+                                <div className="totalPages mt-2">
+                                    <h5>Total Pages</h5>
+                                <div className='totalPagesProgress'>
+                                    <div className="totalPagesProgressBar"></div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="domainScore">
-                            
+                            <h3>Domain Score</h3>
+                            <div className="imgAndContent d-flex flex-column">
+                            <img src="donought.png" alt="" className='donought'/>
+                                <div className="imgTxt d-flex flex-column">
+                                    <span className='txtAccess'>Accesibility Score</span>
+                                    <span className='numerals'>80%</span>
+                                </div>
+                            </div>
+                            <div className="domainScoreFooter d-flex justify-content-between mt-3 mx-5">
+                                <div className="critIssues d-flex flex-column align-items-center">
+                                    <span className='numeralsText'>Critical Issues</span>
+                                    <span className='numerals'>30</span>
+                                </div>
+                                <div className="moderate d-flex flex-column align-items-center">
+                                    <span className='numeralsText'>Moderate</span>
+                                    <span className='numerals'>74</span>
+                                </div>
+                                <div className="low d-flex flex-column align-items-center">
+                                    <span className='numeralsText'>Low</span>
+                                    <span className='numerals'>256</span>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div className="insightsChart">
+                            <header>
+                                <div className="contentChart d-flex flex-row align-items-center justify-content-between mx-3">
+                                    <div className='headingInsights w-50'>
+                                        <span>Insights</span>
+                                    </div>
+                                    <div className="context w-75">
+                                    <Tab.Container id="left-tabs-example" defaultActiveKey="week">
+                                        <Row>
+                                            <Col>
+                                                <Row>
+                                                <Nav variant="pills" className="flex-row">
+                                                <Nav.Item>
+                                                    <Nav.Link eventKey="week" className='context-week'>7 days</Nav.Link>
+                                                    </Nav.Item>
+                                                    <Nav.Item>
+                                                    <Nav.Link eventKey="aMonth" className='context-aMonth'>1 month</Nav.Link>
+                                                    </Nav.Item>
+                                                    <Nav.Item>
+                                                    <Nav.Link eventKey="threeMonths" className='context-threeMonth'>3 months</Nav.Link>
+                                                    </Nav.Item>
+                                                </Nav>
+                                                </Row>
+                                            </Col>
+                                            <Col>
+                                            <Tab.Content>
+                                                <Tab.Pane eventKey="week">
+                                                    <div className="div-Round d-flex align-items-center justify-content-center ">
+                                                      <BsCalendar4 />  <span className='ms-2'>May 3, 2023 - May 10, 2023</span>
+                                                    </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="aMonth">
+                                                <div className="div-Round d-flex align-items-center justify-content-center ">
+                                                      <BsCalendar4 />  <span className='ms-2'>May 2023 - June 2023</span>
+                                                    </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="threeMonths">
+                                                <div className="div-Round d-flex align-items-center justify-content-center ">
+                                                      <BsCalendar4 />  <span className='ms-2'>May 2023 - August 2023</span>
+                                                    </div>
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                            </Col>
+                                        </Row>
+                                        </Tab.Container>
+                                    </div>
+                                </div>
+                                <div className="domainsInsights  mb-5">
+                                  <div className="filters d-flex w-100 mt-3">
+                                  <div className="domainSelected d-flex align-items-center justify-content-around w-25 me-5">
+                                    <span>Domains</span>
+                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </DropdownButton>
+                                    </div>
+                                  <div className="sourceSelected d-flex align-items-center justify-content-around w-25 me-5">
+                                    <span>Sources</span>
+                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </DropdownButton>
+                                    </div>
+                                  <div className="tagsSelected d-flex align-items-center justify-content-around w-25 me-5">
+                                    <span>Tags</span>
+                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </DropdownButton>
+                                    </div>
+                                  </div>
+                                  <img src="imgslideone.png" alt="" className='chartMain mt-3 mx-3'/>
+                                </div>
+                            </header>
+
                     </div>
                        <div className="cardAccount">
                        <div className="accountCard">

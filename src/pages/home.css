@@ -9,6 +9,8 @@
     --success: #00A925;
     --danger: #ED1818;
     --text: #4C506B;
+    --lightBlue: rgba(6, 52, 191, 0.35);
+    --strgBlue:rgb(6, 52, 191);
 }
 html{
     scroll-behavior: smooth;
@@ -208,6 +210,63 @@ img{
 .changeT{
     width: 8rem;
 }
+.TwoCards{
+    width: 10000rem;
+}
+.usageLimit,
+.domainScore{
+    border-radius: 7px;
+    width: 32rem;
+    height: 18rem;
+    padding: 1.5rem 0.9375rem;
+    box-shadow: 0px 7px 10px 7px rgba(0, 0, 0, 0.08);
+    margin-right: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.domainScore .imgAndContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.domainScore .imgAndContent .donought{
+    width: 30%;
+    align-self: center;
+    justify-self: center;
+}
+.usageLimit h3,
+.domainScore h3{
+    font-weight: 600;
+    font-size: 25px;
+}
+.numerals{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+.numeralsText{
+    font-size: 13px;
+}
+.domainScore .imgAndContent .imgTxt{
+    position: absolute;
+}
+.domainScore .imgAndContent .imgTxt .txtAccess{
+    font-size: 12px;
+    width: 50px;
+    text-align: center;
+}
+.users{
+    display: flex;
+    justify-items: center;
+}
+.users h6{
+    font-size: 12px;
+    align-self: center;
+    justify-self: center;
+    padding-top: 3px;
+}
 .accountCard{
     width: 62rem;
     height: 22rem;
@@ -358,3 +417,121 @@ td{
 .statusContent{
     margin-bottom: 1.8rem;
 }
+.desktop{
+    color: #0632BE;
+}
+.usageBars{
+    display: grid;
+    width:100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    justify-self: flex-end;
+}
+.pageViews,
+.remediation,
+.Avg,
+.totalPages{
+
+}
+.pageViews h5,
+.remediation h5,
+.Avg h5,
+.totalPages h5{
+    font-size: 12px;
+}
+.pageViewsProgress,
+.remediationProgress,
+.avgProgress,
+.totalPagesProgress{
+    width: 13rem;
+    background: var(--lightBlue);
+    border-radius: 7px;
+}
+.pageViewsProgressBar,
+.remediationProgressBar,
+.avgProgressBar,
+.totalPagesProgressBar{
+    width: 35%;
+    height: 5px;
+    background: var(--strgBlue);
+    border-radius: 7px;
+  }
+  .insightsChart{
+    width: 77rem;
+  }
+
+  .contentChart{
+    width: 65rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contentChart .headingInsights{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+  }
+  .chartMain{
+    width: 85%;
+  }
+  .div-Round{
+    width: 250px;
+    border: 1px solid var(--mainBg);
+    border-radius: 10px;
+    padding: 3px 5px;
+  }
+  
+/* custom pills */
+  .context .nav.nav-pills {
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 150px;
+    border: 1px solid var(--mainBg);
+    background: transparent;
+    overflow: hidden;
+}
+.context .nav.nav-pills .nav-item {
+    border: 1px solid var(--mainBg);
+    width: 33.335%;
+}
+.context .nav.nav-pills .nav-link {
+      color: var(--mainBg);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+  }
+  .context .nav.nav-pills .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background: var(--mainBg);
+      color: #fff;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+  }
+  .context .nav.nav-pills .nav-link.active::before {
+      width: 100% !important;
+  }
+  .context .nav.nav-pills .nav-link.active {
+    color: #fff;
+  }
+  .nav-link.context-week {
+    border-radius: 55px 0px 0px 55px;
+  }
+  .nav-link.context-aMonth{
+  }
+  .nav-link.context-threeMonth {
+    border-radius: 0 55px 55px 0;
+  }
