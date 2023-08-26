@@ -17,7 +17,7 @@ function Home() {
     return (
         <>
             <body>
-                <div className="header">
+                <div className="headerInfo">
                     <img src="logo.png" alt="" />
                     <div className="others d-flex flex-row">
                     <div className="search">

@@ -55,7 +55,7 @@ height: -webkit-fill-available;
     overflow-y: scroll;
     padding-bottom: 10rem;
 }
-.header{
+.headerInfo{
     margin: 2rem;
     display: flex;
     justify-content: space-between;

@@ -105,10 +105,10 @@ const Secondrow = () =>{
     
     <div className="header">
         <div className="act">
-        <p>Activity</p>
+        <span>Activity</span>
         </div>
         <div className="month">
-            <p>Month</p>
+            <span>Month</span>
            <span><img src={icon}/></span>
         </div>
     </div>
