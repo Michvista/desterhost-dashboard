@@ -14,7 +14,7 @@ import {HouseDoor} from 'react-bootstrap-icons';
 import {AiOutlineDesktop, AiOutlineMobile} from 'react-icons/ai';
 import {FiTablet} from "react-icons/fi"
 import {BsCalendar4} from "react-icons/bs"
-function Home() {
+function Home() { 
     return (
         <>
             <body>
