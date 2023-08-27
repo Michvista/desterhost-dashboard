@@ -1,8 +1,8 @@
 import React from "react";
-import app0 from "../images/App Icon0.png";
-import app1 from "../images/App Icon.png";
-import app2 from "../images/App Icon1.png";
-import app3 from "../images/App Icon2.png"
+import app0 from "../images/icon2.png";
+import app1 from "../images/icon3.png";
+import app2 from "../images/icon1.png";
+import app3 from "../images/icon4.png";
 
 
 
