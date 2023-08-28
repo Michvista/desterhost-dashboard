@@ -247,7 +247,7 @@ body{
   }
 
   .projectbox{
-    max-width: 70%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     gap: 20px;
