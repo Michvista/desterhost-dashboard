@@ -255,6 +255,27 @@ body{
 
   }
 
+.New{
+  font-size:13px:
+  color:blue;
+}
+.onboard{
+  font-size:13px;
+  color:blue;
+  }
+
+.growth{
+  font-size:13px;
+  color:#03E55E;  
+}
+
+.ongoing{
+  font-size:13px;
+  color:#FFACAC;
+}
+
+                                   
+
 @media screen and (max-width:1300px) {
 
   
