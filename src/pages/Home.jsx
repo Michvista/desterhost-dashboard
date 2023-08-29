@@ -631,6 +631,7 @@ function Home() {
                 <div className="section"> 
                     <Reviews />
                     </div>
+                    
                     </Tab.Pane>
                   <Tab.Pane eventKey="config">
                         <p className='display-1'>
