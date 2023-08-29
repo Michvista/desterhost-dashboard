@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
 import Reviews from '../components/reviews.js';
+import Projectbox from '../components/project.js';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -13,7 +14,7 @@ import {HouseDoor} from 'react-bootstrap-icons';
 import {AiOutlineDesktop, AiOutlineMobile} from 'react-icons/ai';
 import {FiTablet} from "react-icons/fi"
 import {BsCalendar4} from "react-icons/bs"
-function Home() {
+function Home() { 
     return (
         <>
             <body>
@@ -631,7 +632,10 @@ function Home() {
                 <div className="section"> 
                     <Reviews />
                     </div>
-                    
+                      <div className="section">
+                          <Projectbox />               
+                      </div>
+                      
                     </Tab.Pane>
                   <Tab.Pane eventKey="config">
                         <p className='display-1'>
