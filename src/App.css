@@ -274,6 +274,12 @@ body{
   font-size:13px;
   color:#ffacac;
 }
+.new,
+.ongoing,
+.growth,
+.onboard{
+  font-weight: bolder;
+}
 
                                    
 
