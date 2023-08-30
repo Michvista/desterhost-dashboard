@@ -11,6 +11,7 @@
     --text: #4C506B;
     --lightBlue: rgba(6, 52, 191, 0.35);
     --strgBlue:rgb(6, 52, 191);
+    --strangeBlue: #042FBD;
 }
 html{
     scroll-behavior: smooth;
@@ -273,6 +274,7 @@ img{
     border-radius: 12px;
     box-shadow: 0px 2px 24px 10px rgba(0, 0, 0, 0.08);
 }
+                /* tableOfActiveDomains */
 .table{
     width: 62rem;
     border-radius: 12px;
@@ -482,7 +484,7 @@ td{
     padding: 3px 5px;
   }
   
-/* custom pills */
+                            /* custom pills */
   .context .nav.nav-pills {
     width: 75%;
     margin: 0 auto;
@@ -535,3 +537,139 @@ td{
   .nav-link.context-threeMonth {
     border-radius: 0 55px 55px 0;
   }
+
+                    /* AccountDetails */
+                    /* profileImgHeadingSect */
+.accDetails .accImgDetails .backdropBgAcc img{
+    width: 100%;
+    height: 20rem;
+}
+.accImgDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accImgDetails .backdropBgAcc{
+    position: relative;
+}
+.accImgDetails .backdropBgAcc .kebabIcon{
+    font-size: 40px;    
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.accImgDetails .profileImg{
+    position: absolute;
+    transform: translateY(80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accImgDetails .profileImg img{
+    border: 5px solid #fff;
+    margin-right: .2rem;
+}
+.accImgDetails .profileImg .subsectDesc{
+    align-self: flex-end;
+    font-family: 'Lato', sans-serif;
+}
+.accImgDetails .profileImg .subsectDesc .highlightedInfo{
+    font-family: 'Lato', sans-serif;
+    width: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+.accImgDetails .profileImg .subsectDesc .accName{
+    color: var(--strangeBlue);
+    padding-top: 3px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+/* Tabs Account Section */
+.accDetails .accTabs{
+    width: 100%;
+    transform: translate(10%, 60%);
+}
+.accTabs .backdropAccTabs{
+    width: 15%;
+    padding: 20px 0px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 13px 9px rgba(0, 0, 0, 0.08);
+    margin-right: 2rem;
+}
+.accTabs .accTabsCont{
+    width: 70%;
+    box-shadow: 0px 1px 13px 9px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    border-radius: 7px;
+}
+.backdropAccTabs .nav.nav-pills{
+    border-radius: 0;
+    --bs-nav-pills-border-radius: 0;
+}
+.backdropAccTabs .nav.nav-pills .nav-item{
+    font-family: "Poppins";
+    font-weight: 900;
+}
+.backdropAccTabs .nav.nav-pills .nav-item .nav-link{
+    color: #222;
+}
+.backdropAccTabs .nav.nav-pills .nav-item .nav-link.active{
+    position: relative;
+    --bs-nav-pills-border-radius: 0;
+    border-radius: 0;
+    background: #bdbdbd;
+    color: var(--mainBg);
+}
+.backdropAccTabs .nav.nav-pills .nav-item .nav-link.active::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 40px;
+    background: var(--mainBg);
+}
+.accTabs .adminDetailsTab{
+    margin-bottom: 2rem;
+}
+.accTabs .adminDetailsTab .nav{
+    position: relative;
+}
+.accTabs .adminDetailsTab .nav::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 5px;
+    background: #777;
+    border-radius: 7px;
+}
+.accTabs .adminDetailsTab .nav .nav-item .nav-link{
+    color: #999;
+    font-weight: 900;
+}
+.accTabs .adminDetailsTab .nav .nav-item .nav-link.active{
+    position: relative;
+    color: #222;
+}
+.accTabs .adminDetailsTab .nav .nav-item .nav-link.active::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-20%);
+    background-color: var(--mainBg);
+    border-radius: 7px;
+    margin-left: 2rem;
+}
+.navForAdmin{
+   
+}

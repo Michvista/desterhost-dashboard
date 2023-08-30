@@ -14,6 +14,7 @@ import {HouseDoor} from 'react-bootstrap-icons';
 import {AiOutlineDesktop, AiOutlineMobile} from 'react-icons/ai';
 import {FiTablet} from "react-icons/fi"
 import {BsCalendar4} from "react-icons/bs"
+import {CiMenuKebab} from "react-icons/ci"
 function Home() { 
     return (
         <>
@@ -648,7 +649,84 @@ function Home() {
                          </Tab.Container>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
-                                <Tab.Pane eventKey="third">third tab content</Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                   <div className="accDetails">
+                                        <div className="accImgDetails">
+                                            <div className="backdropBgAcc">
+                                                    <img src="accBg.png" alt="" />
+                                                    <div className="kebabIcon">
+                                                        <i class="fa-solid fa-ellipsis-vertical" style={{color: "#ffffff"}}></i>
+                                                    </div>
+                                                </div>
+                                                <div className="profileImg">
+                                                    <img src="profileImg.png" alt="" className='rounded-circle'/>
+                                                    <div className="subsectDesc">
+                                                        <div className="highlightedInfo rounded-pill bg-warning p-1">Admin</div>
+                                                        <h3 className="accName">John Doe</h3>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div className="accTabs">
+                                            <Tab.Container defaultActiveKey="Account">
+                                    <Row>
+                                        <div className="backdropAccTabs">
+                                        <Nav variant="pills" className="flex-column">
+                                            <Nav.Item>
+                                            <Nav.Link eventKey="Account">Account</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                            <Nav.Link eventKey="Administration">Administration</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                            <Nav.Link eventKey="Security">Security</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                            <Nav.Link eventKey="Notification">Notification</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                            <Nav.Link eventKey="Billing">Billing</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                        </div>
+                                          <div className="accTabsCont">
+                                        <Tab.Content>
+                                          <Tab.Pane eventKey="Account">First tab content</Tab.Pane>
+                                            <Tab.Pane eventKey="Administration">
+                                            <Tab.Container defaultActiveKey="OrgDetails">
+      <Row>
+      <div className="adminDetailsTab">
+      <Nav className="navForAdmin flex-row w-100 justify-content-between">
+            <Nav.Item>
+              <Nav.Link eventKey="OrgDetails">Organisation Details</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="InvMem">Invite Members</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="ExpData">Export Data Account</Nav.Link>
+            </Nav.Item>
+          </Nav>
+      </div>
+        <Col sm={9}>
+          <Tab.Content>
+            <Tab.Pane eventKey="OrgDetails">First tab content</Tab.Pane>
+            <Tab.Pane eventKey="InvMem">Second tab content</Tab.Pane>
+            <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="Security">Tird tab content</Tab.Pane>
+                                            <Tab.Pane eventKey="Notification">Fourth tab content</Tab.Pane>
+                                            <Tab.Pane eventKey="Billing">Fifth tab content</Tab.Pane>
+                                        </Tab.Content>
+                                          </div>
+                                    </Row>
+                                            </Tab.Container>
+                                        </div>
+                                   </div>
+                                </Tab.Pane>
                                 <Tab.Pane eventKey="fourth">fourth tab content</Tab.Pane>
                                 <Tab.Pane eventKey="fifth">fifth tab content</Tab.Pane>
                                 <Tab.Pane eventKey="sixth">sixth tab content</Tab.Pane>
