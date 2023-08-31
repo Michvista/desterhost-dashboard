@@ -548,9 +548,9 @@ td{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .accImgDetails .backdropBgAcc{
-    position: relative;
 }
 .accImgDetails .backdropBgAcc .kebabIcon{
     font-size: 40px;    
