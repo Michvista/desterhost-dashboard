@@ -281,6 +281,126 @@ body{
   font-weight: bolder;
 }
 
+  .firstinput, .userinput, .lastinput, .emailinput, .phoneinput{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid rgb(165, 165, 165);
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 270px;
+    
+  
+  }
+  .bioinput{
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid rgb(165, 165, 165);
+    padding: 10px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .bio input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14.5px;
+  }
+
+  .firstinput input, .userinput input, .lastinput input, .email input, .phonenum input{
+    border: none;
+    outline: none;
+    font-size: 14.5px;
+    width: 180px;
+    
+  }
+
+  .acctdetails, .orgadetails{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(212, 212, 212, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    padding: 10px;
+
+  }
+
+
+  .firstlast, .mailphone{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .butt{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .btn1{
+    padding: 9px;
+    width: 130px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #0634BF;
+    color: white;
+  }
+
+  .btn2{
+    border: 1px solid #0634BF;
+    color: #0634BF;
+    background-color: white;
+    padding: 9px;
+    width: 130px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+
+.organinput{
+    background-color: white;
+    border: 1px solid rgb(165, 165, 165);
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 320px;
+    border-radius: 4px;
+
+}
+
+.organinput input{
+    border: none;
+    outline: none;
+  
+    
+}
+  
+.danger{
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 320px;
+    display: flex;
+
+    gap: 8px;
+
+}
+
+.organizationcover, .organization{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+
                                    
 
 @media screen and (max-width:1300px) {
