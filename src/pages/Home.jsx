@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
 import Reviews from '../components/reviews.js';
 import Projectbox from '../components/project.js';
+import Account from '../components/account.js';
+import  Organ  from '../components/organization.js';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -690,78 +692,7 @@ function Home() {
                                         </div>
                                           <div className="accTabsCont">
                                         <Tab.Content>
-                                          <Tab.Pane eventKey="Account"><div className="acctdetails">
-            <div className="firstlast">
-
-            <div className="firstname">
-            <label for="firstname">First Name</label><span><img src={star} /></span>
-
-            <div className="firstinput">
-            <input type="text" placeholder="Drannan" />
-            </div>
-           
-            </div>
-            
-            <div className="lastname">
-            <label for="lastname">Last Name</label><span><img src={star} /></span>
-            
-            <div className="lastinput">
-            <input type="text" placeholder="Last name" />
-            </div>
-           
-            </div>
-            </div>
-
-            <div className="username">
-            <label for="username">Username</label><span><img src={star} /></span>
-            
-            <div className="userinput">
-            <input type="text" placeholder="johnDoe" />
-            </div>
-           
-            </div>
-            
-
-            <div className="mailphone">
-            
-            <div className="email">
-            <label for="email">Email</label><span><img src={star} /></span>
-            
-            <div className="emailinput">
-            <input type="text" placeholder="Email" />
-            </div>
-           
-            </div>
-
-
-             
-            <div className="phonenum">
-            <label for="email">Phone No.</label>
-            
-            <div className="phoneinput">
-                <span><img src={nig} style={{width:"45px", marginBottom:"2px"}}/></span>
-            <input type="number" placeholder="83 563 888 320" style={{marginLeft:"10px", appearance:"textfield"}}/>
-            </div>
-           
-            </div>
-            </div>
-
-            <div className="bio">
-            <label for="Bio">Bio </label><span><img src={star} /></span><span style={{fontSize:"12px", color:"gray", marginLeft: "10px"}}>(Write a short introduction about yourself)</span>
-            
-            <div className="bioinput">
-            <input type="text"  />
-            </div>
-           
-            </div>
-
-            <div className="butt">
-                <button className="btn1">Save Changes</button>
-
-                <button className="btn2">Cancel</button>
-            </div>
-            </div>
-</Tab.Pane>
+                                          <Tab.Pane eventKey="Account"><Account /></Tab.Pane>
                                             <Tab.Pane eventKey="Administration">
                                             <Tab.Container defaultActiveKey="OrgDetails">
       <Row>
@@ -780,53 +711,7 @@ function Home() {
       </div>
         <Col sm={9}>
           <Tab.Content>
-            <Tab.Pane eventKey="OrgDetails">
-<div className="orgadetails">
-
-            <div className="organization">
-                <div className="coverdanger">
-                <div className="organizationcover">
-
-            <div className="organizationame">
-            <label for="organame">Organisation Name</label>
-
-            <div className="organinput">
-            <input type="text" placeholder="Racoon Laboratories" />
-            </div>
-           
-            </div>
-
-
-
-            <div className="organizationame">
-            <label for="organame">Organisation Url</label>
-
-            <div className="organinput">
-            <input type="text" placeholder="Racoon Laboratories" />
-            </div>
-           
-            </div>
-            </div>
-
-            <div className="danger">
-            <span><img src={danger}  style={{width:"20px"}} /></span>
-            <span>You can only change the url once in 60 days</span>
-            </div>
-            </div>
-            
-
-
-
-            
-            <div className="butt">
-                <button className="btn1">Save Changes</button>
-
-                <button className="btn2">Cancel</button>
-            </div>
-
-           </div>
-           </div>
-</Tab.Pane>
+            <Tab.Pane eventKey="OrgDetails"><Organ /></Tab.Pane>
             <Tab.Pane eventKey="InvMem">Second tab content</Tab.Pane>
             <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
           </Tab.Content>
