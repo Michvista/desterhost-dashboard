@@ -39,7 +39,7 @@ const Organ = () =>{
 </div>
 </div>
 
-<div className="danger">
+<div className="dangerr">
 <span><img src={danger}  style={{width:"20px"}} /></span>
 <span>You can only change the url once in 60 days</span>
 </div>
