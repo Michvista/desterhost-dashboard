@@ -540,6 +540,9 @@ td{
 
                     /* AccountDetails */
                     /* profileImgHeadingSect */
+.accDetails{
+                        margin-bottom: 30%;
+}
 .accDetails .accImgDetails .backdropBgAcc img{
     width: 100%;
     height: 20rem;
@@ -592,10 +595,11 @@ td{
 /* Tabs Account Section */
 .accDetails .accTabs{
     width: 100%;
-    transform: translate(10%, 60%);
+    transform: translate(5%, 60%);
 }
 .accTabs .backdropAccTabs{
     width: 15%;
+    height: 15rem;
     padding: 20px 0px;
     border-radius: 7px;
     box-shadow: 0px 1px 13px 9px rgba(0, 0, 0, 0.08);
@@ -634,13 +638,16 @@ td{
     height: 40px;
     background: var(--mainBg);
 }
-.accTabs .adminDetailsTab{
+.accTabs .adminDetailsTab,
+.accTabs .billingTab{
     margin-bottom: 2rem;
 }
-.accTabs .adminDetailsTab .nav{
+.accTabs .adminDetailsTab .nav,
+.accTabs .billingTab .nav{
     position: relative;
 }
-.accTabs .adminDetailsTab .nav::before{
+.accTabs .adminDetailsTab .nav::before,
+.accTabs .billingTab .nav::before{
     position: absolute;
     content: "";
     bottom: 0;
@@ -650,15 +657,18 @@ td{
     background: #777;
     border-radius: 7px;
 }
-.accTabs .adminDetailsTab .nav .nav-item .nav-link{
+.accTabs .adminDetailsTab .nav .nav-item .nav-link,
+.accTabs .billingTab .nav .nav-item .nav-link{
     color: #999;
     font-weight: 900;
 }
-.accTabs .adminDetailsTab .nav .nav-item .nav-link.active{
+.accTabs .adminDetailsTab .nav .nav-item .nav-link.active,
+.accTabs .billingTab .nav .nav-item .nav-link.active{
     position: relative;
     color: #222;
 }
-.accTabs .adminDetailsTab .nav .nav-item .nav-link.active::before{
+.accTabs .adminDetailsTab .nav .nav-item .nav-link.active::before,
+.accTabs .billingTab .nav .nav-item .nav-link.active::before{
     position: absolute;
     content: "";
     width: 100%;
@@ -672,4 +682,41 @@ td{
 }
 .navForAdmin{
    
+}
+
+/* .billingTab */
+.billHistory{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.billHistory .filter{
+   align-self: flex-end;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-right: 5rem;
+}
+.statusOfInvoice,
+.statusOfTeam{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.invTable{
+    box-shadow: none;
+}
+.invTable thead tr th,
+.invTable tbody tr th{
+    padding: 20px;
+    border-bottom: none;
+}
+.invTable tbody tr th td{
+    padding-left: 5rem;
 }

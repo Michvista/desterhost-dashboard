@@ -17,6 +17,9 @@ import {AiOutlineDesktop, AiOutlineMobile} from 'react-icons/ai';
 import {FiTablet} from "react-icons/fi"
 import {BsCalendar4} from "react-icons/bs"
 import {CiMenuKebab} from "react-icons/ci"
+import {Upload, Trash} from "react-bootstrap-icons"
+
+
 function Home() { 
     return (
         <>
@@ -694,34 +697,147 @@ function Home() {
                                         <Tab.Content>
                                           <Tab.Pane eventKey="Account"><Account /></Tab.Pane>
                                             <Tab.Pane eventKey="Administration">
-                                            <Tab.Container defaultActiveKey="OrgDetails">
-      <Row>
-      <div className="adminDetailsTab">
-      <Nav className="navForAdmin flex-row w-100 justify-content-between">
-            <Nav.Item>
-              <Nav.Link eventKey="OrgDetails">Organisation Details</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="InvMem">Invite Members</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="ExpData">Export Data Account</Nav.Link>
-            </Nav.Item>
-          </Nav>
-      </div>
-        <Col sm={9}>
-          <Tab.Content>
-            <Tab.Pane eventKey="OrgDetails"><Organ /></Tab.Pane>
-            <Tab.Pane eventKey="InvMem">Second tab content</Tab.Pane>
-            <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
-          </Tab.Content>
-        </Col>
-      </Row>
-    </Tab.Container>
+                                                <Tab.Container defaultActiveKey="OrgDetails">
+        <Row>
+        <div className="adminDetailsTab">
+        <Nav className="navForAdmin flex-row w-100 justify-content-between">
+                <Nav.Item>
+                <Nav.Link eventKey="OrgDetails">Organisation Details</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                <Nav.Link eventKey="InvMem">Invite Members</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                <Nav.Link eventKey="ExpData">Export Data Account</Nav.Link>
+                </Nav.Item>
+            </Nav>
+        </div>
+            <Col>
+            <Tab.Content>
+                <Tab.Pane eventKey="OrgDetails"><Organ /></Tab.Pane>
+                <Tab.Pane eventKey="InvMem">Second tab content</Tab.Pane>
+                <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
+            </Tab.Content>
+            </Col>
+        </Row>
+                                                </Tab.Container>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="Security">Tird tab content</Tab.Pane>
                                             <Tab.Pane eventKey="Notification">Fourth tab content</Tab.Pane>
-                                            <Tab.Pane eventKey="Billing">Fifth tab content</Tab.Pane>
+{/* billing Tabs For Account Details Here */}
+                                            <Tab.Pane eventKey="Billing">
+                                            <Tab.Container defaultActiveKey="payMeth">
+        <Row>
+        <div className="billingTab">
+        <Nav className="navForBill flex-row w-100 justify-content-between">
+                <Nav.Item>
+                <Nav.Link eventKey="payMeth">Payment Methods</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                <Nav.Link eventKey="billPlans">Billing Plans</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                <Nav.Link eventKey="billHist">Billing History</Nav.Link>
+                </Nav.Item>
+            </Nav>
+        </div>
+            <Col>
+            <Tab.Content>
+                <Tab.Pane eventKey="payMeth">
+                    PAY mETHOD goEs Here
+                </Tab.Pane>
+                <Tab.Pane eventKey="billPlans">
+                <table class="table w-100 invTable">
+                            <thead>
+                                <tr>
+                                <th scope="col">Team Members</th>
+                                <th scope="col">Team Role</th>
+                                <th scope="col">Date added</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row" >
+                                    <div className="d-flex flex-column">
+                                        <p className='text-black-50'>Jack Michael</p>
+                                        <span className='text-body-secondary'>@jack</span>
+                                    </div>
+                                </th>
+                                <td>Designer</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfTeam">
+                                        <span className='text-success'>Active</span>
+                                        <Trash size={20} color='#0634BF'/>
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">
+                                <div className="d-flex flex-column">
+                                        <p className='text-black-50'>Cynthia Ayomide</p>
+                                        <span className='text-body-secondary'>@cynthiaA</span>
+                                    </div>
+                                </th>
+                                <td>Developer</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfTeam">
+                                        <span className='text-danger'>Offline</span>
+                                        <Trash size={20} color='#0634BF'/>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                                </table>
+                </Tab.Pane>
+                <Tab.Pane eventKey="billHist">
+                    <div className="billHistory w-100">
+                        <div className="filter">
+                          <span>Filter</span>  <i class="fa-solid fa-filter"></i> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                              <table class="table w-100 invTable">
+                            <thead>
+                                <tr>
+                                <th scope="col">Invoice</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row" >Basic Plan</th>
+                                <td>0$</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfInvoice">
+                                        <span>Paid</span>
+                                        <Upload />
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">Proffesional Plan</th>
+                                <td>20%</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfInvoice">
+                                        <span>Paid</span>
+                                        <Upload />
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                                </table>
+                    </div>
+                </Tab.Pane>
+            </Tab.Content>
+            </Col>
+        </Row>
+                                                </Tab.Container>
+                                            </Tab.Pane>
                                         </Tab.Content>
                                           </div>
                                     </Row>
