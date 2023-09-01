@@ -317,7 +317,7 @@ body{
   }
 
   .acctdetails, .orgadetails{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
