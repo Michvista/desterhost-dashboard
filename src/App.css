@@ -316,7 +316,7 @@ body{
     
   }
 
-  .acctdetails, .orgadetails{
+  .acctdetails, .orgadetails, .billdetails, .atmdetails{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -391,12 +391,66 @@ body{
 
 }
 
-.organizationcover, .organization{
+.organizationcover, .organization, .atmall{
     display: flex;
     flex-direction: column;
     gap: 40px;
 
 }
+
+
+.carddetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(230, 230, 230);
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.remove{
+    display: flex;
+   align-items: center;
+   gap: 10px;
+   justify-content: space-between;
+   
+}
+
+.atm{
+    width: 60%;
+}
+
+.addpayment{
+    border: 1px solid  #0634BF;
+    padding: 7px;
+    border-radius: 7px;
+    width: 80%;
+    color:  #0634BF;
+    margin-top: 30px;
+}
+
+
+.freeplan{
+    padding: 20px;
+    border-radius: 8px;
+    border-radius: 10px;
+    background-color: rgba(244, 244, 248, 0.50);
+    width: 40%;
+    
+}
+
+.billingplans{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
 
 
                                    
