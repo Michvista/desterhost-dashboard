@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
 import Reviews from '../components/reviews.js';
+import Atm from '../components/atm.js';
+import Billing from '../components/Billing.js';
 import Projectbox from '../components/project.js';
 import Account from '../components/account.js';
 import  Organ  from '../components/organization.js';
@@ -799,10 +801,10 @@ function Home() {
             <Col>
             <Tab.Content>
                 <Tab.Pane eventKey="payMeth">
-                    PAY mETHOD goEs Here
+                    <Atm />
                 </Tab.Pane>
                 <Tab.Pane eventKey="billPlans">
-               <h1>Bill Plans</h1>
+               <Biilling />
                 </Tab.Pane>
                 <Tab.Pane eventKey="billHist">
                     <div className="billHistory w-100">
