@@ -804,7 +804,7 @@ function Home() {
                     <Atm />
                 </Tab.Pane>
                 <Tab.Pane eventKey="billPlans">
-               <Biilling />
+               <Billing />
                 </Tab.Pane>
                 <Tab.Pane eventKey="billHist">
                     <div className="billHistory w-100">
