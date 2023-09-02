@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
 import Reviews from '../components/reviews.js';
 import Atm from '../components/atm.js';
-import Billing from '../components/Billing.js';
+import Billing from '../components/billing.js';
 import Projectbox from '../components/project.js';
 import Account from '../components/account.js';
 import  Organ  from '../components/organization.js';
