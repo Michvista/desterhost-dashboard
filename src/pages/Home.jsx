@@ -715,7 +715,62 @@ function Home() {
             <Col>
             <Tab.Content>
                 <Tab.Pane eventKey="OrgDetails"><Organ /></Tab.Pane>
-                <Tab.Pane eventKey="InvMem">Second tab content</Tab.Pane>
+                <Tab.Pane eventKey="InvMem">
+                <table class="table w-100 invTable">
+                            <thead>
+                                <tr>
+                                <th scope="col">Team Members</th>
+                                <th scope="col">Team Role</th>
+                                <th scope="col">Date added</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row" >
+                                  <div className="d-flex">
+                                  <img src="pic.png" alt="" className='pImg'/>
+                                    <div className="d-flex flex-column">
+                                        <p className='text-black-50'>Jack Michael</p>
+                                        <span className='text-body-secondary'>@jack</span>
+                                    </div>
+                                  </div>
+                                </th>
+                                <td>Designer</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfTeam">
+                                        <span className='text-success'>Active</span>
+                                        <Trash size={20} color='#0634BF'/>
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">
+                                <div className="d-flex">
+                                  <img src="pic.png" alt="" className='pImg'/>
+                                    <div className="d-flex flex-column">
+                                        <p className='text-black-50'>Cynthia Ayomide</p>
+                                        <span className='text-body-secondary'>@cynthiaA</span>
+                                    </div>
+                                  </div>
+                                </th>
+                                <td>Developer</td>
+                                <td>March 22, 2023</td>
+                                <td>
+                                    <div className="statusOfTeam">
+                                        <span className='text-danger'>Offline</span>
+                                        <Trash size={20} color='#0634BF'/>
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                                </table>
+                                <div className="inviteMembersForm">
+                                <button className='btn btn-primary me-3 p-2'>Save Changes</button>
+                                <button className='btn btn-outline-primary p-2'>Cancel</button>
+                                </div>
+                </Tab.Pane>
                 <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
             </Tab.Content>
             </Col>
@@ -747,50 +802,7 @@ function Home() {
                     PAY mETHOD goEs Here
                 </Tab.Pane>
                 <Tab.Pane eventKey="billPlans">
-                <table class="table w-100 invTable">
-                            <thead>
-                                <tr>
-                                <th scope="col">Team Members</th>
-                                <th scope="col">Team Role</th>
-                                <th scope="col">Date added</th>
-                                <th scope="col">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row" >
-                                    <div className="d-flex flex-column">
-                                        <p className='text-black-50'>Jack Michael</p>
-                                        <span className='text-body-secondary'>@jack</span>
-                                    </div>
-                                </th>
-                                <td>Designer</td>
-                                <td>March 22, 2023</td>
-                                <td>
-                                    <div className="statusOfTeam">
-                                        <span className='text-success'>Active</span>
-                                        <Trash size={20} color='#0634BF'/>
-                                    </div>
-                                </td>
-                                </tr>
-                                <tr>
-                                <th scope="row">
-                                <div className="d-flex flex-column">
-                                        <p className='text-black-50'>Cynthia Ayomide</p>
-                                        <span className='text-body-secondary'>@cynthiaA</span>
-                                    </div>
-                                </th>
-                                <td>Developer</td>
-                                <td>March 22, 2023</td>
-                                <td>
-                                    <div className="statusOfTeam">
-                                        <span className='text-danger'>Offline</span>
-                                        <Trash size={20} color='#0634BF'/>
-                                    </div>
-                                </td>
-                                </tr>
-                            </tbody>
-                                </table>
+               <h1>Bill Plans</h1>
                 </Tab.Pane>
                 <Tab.Pane eventKey="billHist">
                     <div className="billHistory w-100">

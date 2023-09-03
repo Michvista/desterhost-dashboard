@@ -720,3 +720,14 @@ td{
 .invTable tbody tr th td{
     padding-left: 5rem;
 }
+.pImg{
+    width: 55px;
+    height: 55px;
+    margin-right: .5rem;
+}
+.inviteMembersForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
