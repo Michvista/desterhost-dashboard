@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import app0 from "../images/Appicon1.png";
-import app1 from "../images/Appicon2.png";
-import app2 from "../images/Appicon3.png";
-import del from "../images/del.png";
-import edi from "../images/edit.png";
+import app0 from "./images/Appicon1.png";
+import app1 from "./images/Appicon2.png";
+import app2 from "./images/Appicon3.png";
+import del from "./images/del.png";
+import edi from "./images/edit.png";
 import review from "./data";
-import vector from "../images/Vector.png";
+import vector from "./images/Vector.png";
 
 
 
