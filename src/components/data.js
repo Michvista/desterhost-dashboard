@@ -1,6 +1,6 @@
 import React from "react";
-import edi from "../images/edit.png";
-import del from "../images/del.png";
+import edi from "./images/edit.png";
+import del from "./images/del.png";
 const review = [
 
     {
