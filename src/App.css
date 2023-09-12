@@ -245,7 +245,7 @@ body{
   }
 
   .projectbox{
-    width: 80%;
+    width: 87%;
     display: flex;
     gap: 20px;
     margin-top: 30px;
@@ -254,7 +254,7 @@ body{
 
 
   .projectall{
-    width: 80%;
+    width: 87%;
     margin: auto;
   }
 
