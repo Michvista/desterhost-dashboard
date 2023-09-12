@@ -640,9 +640,7 @@ function Home() {
                 <div className="section"> 
                     <Reviews />
                     </div>
-                      <div className="section">
-                          <Projectbox />               
-                      </div>
+                      
                       
                     </Tab.Pane>
                   <Tab.Pane eventKey="config">
@@ -859,7 +857,11 @@ function Home() {
                                         </div>
                                    </div>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="fourth">fourth tab content</Tab.Pane>
+                                <Tab.Pane eventKey="fourth">
+                                    <div className="section">
+                                  <Projectbox />               
+                                  </div>
+                                </Tab.Pane>
                                 <Tab.Pane eventKey="fifth">fifth tab content</Tab.Pane>
                                 <Tab.Pane eventKey="sixth">sixth tab content</Tab.Pane>
                             </Tab.Content>
