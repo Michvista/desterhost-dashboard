@@ -245,7 +245,7 @@ body{
   }
 
   .projectbox{
-    width: 87%;
+    width: 70%;
     display: flex;
     gap: 20px;
     margin-top: 30px;
@@ -254,7 +254,7 @@ body{
 
 
   .projectall{
-    width: 87%;
+    width: 85%;
     margin: auto;
   }
 
@@ -282,6 +282,7 @@ body{
 
 #tab td{
   background-color: #FAFAFA;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .tickettable{
