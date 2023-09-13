@@ -294,7 +294,7 @@ const yinu = (Task)=>{
         <div className="des">
             <label for="ticket">Ticket Description:</label>
             <div className="desinpu">
-        <input type="text" value={des} id="des" onChange={adu}/>
+       <textarea name="text" rows="6" cols="10" wrap="soft" value={des} id="des" onChange={adu}></textarea>
         </div>
         </div>
         <input type="submit" id="sub" value="submit ticket"/>
