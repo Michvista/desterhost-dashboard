@@ -350,7 +350,7 @@ body{
   color: white;
 }
 
-.ticketsinpu input, .cateinpu select, .dateinpu input, .desinpu input{
+.ticketsinpu input, .cateinpu select, .dateinpu input{
   border: none;
   outline: none;
   font-size: 14.5px;
@@ -358,7 +358,19 @@ body{
   background-color: #FAFAFA;
 }
 
-.ticketsinpu, .cateinpu, .dateinpu, .desinpu{
+
+.desinpu textarea{
+  border: none;
+  outline: none;
+  font-size: 14.5px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ticketsinpu, .cateinpu, .dateinpu{
     border-radius: 15px;
     background-color: #FAFAFA;
     outline: none;
@@ -506,7 +518,7 @@ body{
 }
 
 .atm{
-    width: 50%;
+    width: 60%;
 }
 
 .addpayment{
@@ -534,6 +546,69 @@ body{
     gap: 30px;
     margin-top: 30px;
     justify-content: center;
+}
+
+
+.bug, .upload, .machine, .dob, .api{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.bug input, .machine input{
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 47%;
+  background-color: #FAFAFA;
+  border-radius: 12px;
+  padding: 17px;
+  box-sizing: border-box;
+  color: rgba(0, 3, 16, 0.46);
+}
+
+.api input, .uplo, .dob textarea{
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 70%;
+  background-color: #FAFAFA;
+  border-radius: 12px;
+  padding: 17px;
+  box-sizing: border-box;
+  color: rgba(0, 3, 16, 0.46);
+}
+
+.uplo{
+  text-align: center;
+}
+
+.uplo img{
+  width: 13%;
+}
+
+.file, #file{
+    padding: 9px;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #0634BF;
+    color: white;
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+}
+#file{
+  margin-top: 50px;
+}
+
+
+.summaryall{
+  width: 70%;
+  margin: auto;
 }
 
 
