@@ -601,6 +601,11 @@ body{
     font-size: 15px;
     cursor: pointer;
 }
+
+
+#up{
+  color: white;
+}
 #file{
   margin-top: 50px;
 }
