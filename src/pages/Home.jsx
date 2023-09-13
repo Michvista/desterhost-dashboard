@@ -165,9 +165,11 @@ function Home() {
                         </p>
                     </Tab.Pane>
                   <Tab.Pane eventKey="desterfix">
-                        <p className='display-1'>
-                           <Summary />
-                        </p>
+                       <div className="section">
+                             <Summary />
+                       </div>
+                         
+                        
                     </Tab.Pane>
                   <Tab.Pane eventKey="reports">
                         <p className='display-1'>
