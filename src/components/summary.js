@@ -24,7 +24,7 @@ const Summary = () =>{
 
         <div className="dob">
         <span><b>Description of Bug:</b></span>
-       <textarea name="text" rows="6" cols="10" wrap="soft" placeholder="Example: Windows fails to PXE boot IBM LPAR machine as VM host I'm using snap version/build 3.0.0~beta2-9796-g.2182ab55f. I tried to create a VM host using a previously discovered IBM LPAR machine, using the MAAS UI. >>I was able to select the machine under 'Add KVM' define its parameters, and select a project. I was also able to push 'Authenticate' and the expected commissioning process began. After the machine powered on, though, the commissioning process timed out trying to PXE boot the machine. Looking at the machine, it had indeed been powered on, but nothing happened after that"></textarea>
+       <textarea name="text" rows="9" cols="10" wrap="soft" placeholder="Example: Windows fails to PXE boot IBM LPAR machine as VM host I'm using snap version/build 3.0.0~beta2-9796-g.2182ab55f. I tried to create a VM host using a previously discovered IBM LPAR machine, using the MAAS UI. >>I was able to select the machine under 'Add KVM' define its parameters, and select a project. I was also able to push 'Authenticate' and the expected commissioning process began. After the machine powered on, though, the commissioning process timed out trying to PXE boot the machine. Looking at the machine, it had indeed been powered on, but nothing happened after that"></textarea>
         </div>
 
         <div className="upload">
