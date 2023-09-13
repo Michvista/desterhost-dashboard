@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import upload from "../images/upload.png";
+import upload from "./images/upload.png";
 
 
 
