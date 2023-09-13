@@ -518,7 +518,7 @@ body{
 }
 
 .atm{
-    width: 60%;
+    width: 56%;
 }
 
 .addpayment{
@@ -560,7 +560,7 @@ body{
   border: none;
   outline: none;
   font-size: 13px;
-  width: 47%;
+  width: 54%;
   background-color: #FAFAFA;
   border-radius: 12px;
   padding: 17px;
@@ -572,7 +572,7 @@ body{
   border: none;
   outline: none;
   font-size: 13px;
-  width: 70%;
+  width: 77%;
   background-color: #FAFAFA;
   border-radius: 12px;
   padding: 17px;
@@ -607,7 +607,7 @@ body{
 
 
 .summaryall{
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
