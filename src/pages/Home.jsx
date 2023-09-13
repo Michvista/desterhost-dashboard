@@ -4,6 +4,7 @@ import "./home.css"
 import Reviews from '../components/reviews.js';
 import Atm from '../components/atm.js';
 import Billing from '../components/Billing.js';
+import Summary from '../components/summary.js';
 import Projectbox from '../components/project.js';
 import Account from '../components/account.js';
 import  Organ  from '../components/organization.js';
@@ -165,7 +166,7 @@ function Home() {
                     </Tab.Pane>
                   <Tab.Pane eventKey="desterfix">
                         <p className='display-1'>
-                        Hi desterfix
+                           <Summary />
                         </p>
                     </Tab.Pane>
                   <Tab.Pane eventKey="reports">
