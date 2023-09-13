@@ -34,7 +34,7 @@ const Summary = () =>{
         <p>Drag or Upload Media from Device</p>
 
          <div className="file">
-        <label for="files">Upload media</label>
+        <label for="files" id="up">Upload media</label>
         <input id="files" style={{display:"none"}} type="file"/>
          </div>
 
