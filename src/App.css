@@ -560,7 +560,7 @@ body{
   border: none;
   outline: none;
   font-size: 13px;
-  width: 54%;
+  width: 70%;
   background-color: #FAFAFA;
   border-radius: 12px;
   padding: 17px;
@@ -572,7 +572,7 @@ body{
   border: none;
   outline: none;
   font-size: 13px;
-  width: 77%;
+  width: 100%;
   background-color: #FAFAFA;
   border-radius: 12px;
   padding: 17px;
@@ -607,7 +607,7 @@ body{
 
 
 .summaryall{
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
