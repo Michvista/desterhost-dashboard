@@ -21,6 +21,8 @@ const  Projectbox = () =>{
     const [date, setDate] = useState("");
     
     const [des, setDes] = useState("");
+
+    const cancel = useRef()
     
     const nam = (event)=>{
         setName(event.target.value);
@@ -286,7 +288,7 @@ const yinu = (Task)=>{
         <div className="date">
             <span>Date:</span>
             <div className="dateinpu">
-        <input type="text" value={date} onChange={nem}/>
+        <input type="date" value={date} onChange={nem}/>
         </div>
         </div>
         </div>
@@ -298,6 +300,7 @@ const yinu = (Task)=>{
         </div>
         </div>
         <input type="submit" id="sub" value="submit ticket"/>
+        <button className="cancel" ref={cancel}>Cancel</button>
         </form>
       
     </div>

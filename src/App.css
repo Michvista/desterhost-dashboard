@@ -333,7 +333,9 @@ body{
 .date, .cate, .des,.tickets{
   width: 100%;
 }
-
+.des label{
+  padding-bottom: 7px;
+}
 
 #des{
   padding: 50px;
@@ -348,6 +350,7 @@ body{
   outline: none;
   background-color: #0634BF;
   color: white;
+  text-transform: capitalize;
 }
 
 .ticketsinpu input, .cateinpu select, .dateinpu input{
@@ -355,19 +358,24 @@ body{
   outline: none;
   font-size: 14.5px;
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #dedede;
+  border-radius: 7px;
+  padding: 15px;
 }
 
 
 .desinpu textarea{
   border: none;
+  padding: 15px;
   outline: none;
   font-size: 14.5px;
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #dedede;
   border-radius: 15px;
   padding: 10px;
   box-sizing: border-box;
+  resize: none;
+  border-radius: 7px;
 }
 
 .ticketsinpu, .cateinpu, .dateinpu{
