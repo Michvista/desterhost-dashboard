@@ -22,7 +22,7 @@ const  Projectbox = () =>{
     
     const [des, setDes] = useState("");
 
-    const cancel = useRef()
+   
     
     const nam = (event)=>{
         setName(event.target.value);
@@ -299,8 +299,10 @@ const yinu = (Task)=>{
        <textarea name="text" rows="6" cols="10" wrap="soft" value={des} id="des" onChange={adu}></textarea>
         </div>
         </div>
+             <div className="btngrp">
         <input type="submit" id="sub" value="submit ticket"/>
-        <button className="cancel" ref={cancel}>Cancel</button>
+       <button  id="sub" onClick={iu}>Cancel</button>
+              </div>
         </form>
       
     </div>
