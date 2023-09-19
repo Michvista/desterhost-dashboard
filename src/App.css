@@ -624,6 +624,12 @@ body{
 
 }
 
+.btngrp{
+  display: flex;
+  gap: 20px;
+}
+
+
 
 
 
