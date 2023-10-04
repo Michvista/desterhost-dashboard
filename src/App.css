@@ -689,26 +689,8 @@ body{
     .summaryall span{
       font-size: 13px;
     }
- 
-  @media screen and (max-width:700px) {
-    
-    .bug input, .machine input, .api input, .uplo, .dob textarea{
-      font-size: 12px;
-      padding: 13px;
-    }
-
-    .summaryall span{
-      font-size: 13px;
-    }
-    
-.summaryall{
-  width: 85%;
-  margin-left: 30px;
-
-}
+  }
   
-  }     
-  
-  }     
+     
 
         
