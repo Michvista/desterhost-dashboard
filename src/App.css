@@ -690,5 +690,11 @@ body{
     .summaryall span{
       font-size: 13px;
     }
+    
+.summaryall{
+  width: 85%;
+  margin:auto;
+
+}
   
   }            
