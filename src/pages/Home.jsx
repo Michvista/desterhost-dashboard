@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./home.css"
 import Reviews from '../components/reviews.js';
@@ -21,9 +21,16 @@ import {FiTablet} from "react-icons/fi"
 import {BsCalendar4} from "react-icons/bs"
 import {CiMenuKebab} from "react-icons/ci"
 import {Upload, Trash} from "react-bootstrap-icons"
+import { RxHamburgerMenu } from 'react-icons/rx';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 function Home() { 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+  
     return (
         <>
             <body>
@@ -45,11 +52,55 @@ function Home() {
                             <span>System Admin</span>
                         </div>
                     </div>
+                    <button className="menu" onClick={handleShow}>
+                        <RxHamburgerMenu color='#0632BE'/>
+                    </button>
                     </div>
                 </div>
                 <main>
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                    <div className="sidebar">
+                <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas.Header closeButton></Offcanvas.Header>
+            <Offcanvas.Body>
+            <div className="sidebar">
+                        <p>ACCOUNT</p>
+                        <Row>
+                            <Col sm={8}>
+                            <Nav variant="pills" className="flex-column">
+                                <Nav.Item>
+                                <Nav.Link  eventKey="first"><img src="domains.png" alt=''/></Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="second"><img src="reports.png" alt="" /></Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="third"><img src="account.png" alt="" /></Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="fourth"><img src="tickets.png" alt="" /></Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="fifth"><img src="subs.png" alt="" /></Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="sixth" className='last'><img src="teams.png" alt="" /></Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                            </Col>
+                        </Row>
+                            <hr />
+                            <div className="support">
+                            <Row>
+                <Nav href="" className="flex-column supAndLog">
+                        <Nav.Link href="/home"><img src="support.png" alt="" /></Nav.Link>
+                        <Nav.Link href=''><img src="logout.png" alt="" /></Nav.Link>
+                            </Nav>
+                            </Row>
+                            </div>
+                    </div>
+            </Offcanvas.Body>
+          </Offcanvas>
+                    <div className="sidebar desktop">
                         <p>ACCOUNT</p>
                         <Row>
                             <Col sm={8}>

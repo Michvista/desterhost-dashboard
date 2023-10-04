@@ -132,15 +132,7 @@ img{
     cursor: pointer;
 }
 
-@media screen and (max-width: 988px){
-    .search,
-    .sidebar{
-        display: none;
-    }
-    .content{
-        margin: 3rem; 
-    }
-} 
+
 .accountCard p,
 .accountCard span,
 .activeDomains p,
@@ -209,7 +201,7 @@ img{
     margin-right: 20px;
 }
 .changeT{
-    width: 8rem;
+    width: 10rem;
 }
 .TwoCards{
     width: 10000rem;
@@ -731,3 +723,32 @@ td{
     align-items: center;
     justify-content: center;
 }
+
+
+/* responsiveness */
+
+.menu{
+    color: white;
+    display: none;
+    position: relative;
+    right: 50px;
+    /* top: -20px; */
+    background: none;
+    border: 0px;
+    font-size: 25px;
+    color: var(--mainBg);
+  }
+
+@media screen and (max-width: 988px){
+    .search,
+    .sidebar.desktop{
+        display: none;
+    }
+    .content{
+        margin: 3rem; 
+    }
+    .menu
+    {
+        display: block;
+    }
+} 
