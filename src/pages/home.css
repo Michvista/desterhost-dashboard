@@ -204,7 +204,7 @@ img{
     width: 10rem;
 }
 .TwoCards{
-    width: 10000rem;
+    width: 100rem;
 }
 .usageLimit,
 .domainScore{
@@ -724,6 +724,12 @@ td{
     justify-content: center;
 }
 
+/* .section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+} */
 
 /* responsiveness */
 
@@ -739,6 +745,37 @@ td{
     color: var(--mainBg);
   }
 
+@media screen and (max-width: 1280px) {
+    .TwoCards{
+        width: 120%;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin-bottom: 1rem
+    }
+    .insightsChart{
+        width: 65rem;
+    }
+    .headingInsights{
+        width: 20% !important;
+    }
+    .accountCard{
+        width: 60rem;
+    }
+    .dummyGraph{
+        width: 98%;
+    }
+    .firstrow{
+       width: 60rem;
+      }      
+      .secondrow, .thirdrow {
+        gap: 15px;
+    }    
+    .usersbox{
+        height: auto;
+    }
+}
+  
 @media screen and (max-width: 988px){
     .search,
     .sidebar.desktop{
@@ -751,4 +788,9 @@ td{
     {
         display: block;
     }
+    .mx-5.mobile{
+        margin-left: 0 !important;
+    }
 } 
+
+

@@ -21,8 +21,6 @@ const Reviews = () =>{
         <div className="all">
 
             <div className='firstrow'>
-
-
            <div className="select">
             <div id="select">
                 <span><p>Timeframe: <b>This Month</b></p></span>

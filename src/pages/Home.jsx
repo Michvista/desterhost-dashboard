@@ -203,7 +203,7 @@ function Home() {
                 </Nav.Item>
                </div>
                 </Nav>
-                  <Col sm={9} className='mx-5 my-4'>
+                  <Col sm={9} className='mx-5 mobile my-4'>
                   <Tab.Content>
                   <Tab.Pane eventKey="domains">
                         <p className='display-1'>
@@ -219,8 +219,6 @@ function Home() {
                        <div className="section">
                              <Summary />
                        </div>
-                         
-                        
                     </Tab.Pane>
                   <Tab.Pane eventKey="reports">
                         <p className='display-1'>
