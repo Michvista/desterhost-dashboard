@@ -213,7 +213,7 @@ const yinu = (Task)=>{
 <div className="tableall">
 
 
-<table style={{width:"100%", borderBottom: "1px solid #DFDFDF"}} id="tab">
+<table id="tab">
 
         <tr style={{backgroundColor:"#DFDFDF"}}>
             <th>Tickets Name</th>
