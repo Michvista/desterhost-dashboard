@@ -695,9 +695,7 @@ body{
         font-size: 17px;
     }
 
-    .secondrow, .thirdrow{
-        gap: 8px;
-    }
+   
 
     .usersbox{
         padding: 8px;
@@ -805,12 +803,32 @@ body{
 
 
 .all{
-  width: 60%;
+  width: 100%;
 }
 
     
   }
 
+@media screen and (max-width:1000px) and (min-width:800px){
+
+    .secondrow, .thirdrow{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+.all{
+  width: 80%;
+}
+    
+    
+    
+    .secondrow1, .secondrow2, .thirdrow1, .thirdrow2{
+      width: 100%;
+    }
+    
+    
+    }
 
   @media screen and (max-width:800px) and (min-width:320px) {
 
