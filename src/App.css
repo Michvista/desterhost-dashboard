@@ -795,6 +795,11 @@ body{
 }
 
 
+.imgframe{
+  max-width: 100%;
+  padding-bottom: 20%;
+  
+}
 
 
 .secondrow1, .secondrow2, .thirdrow1, .thirdrow2{
@@ -803,7 +808,7 @@ body{
 
 
 .all{
-  width: 100%;
+  width: 120%;
 }
 
     
@@ -818,7 +823,7 @@ body{
     
     
 .all{
-  width: 80%;
+  width: 100%;
 }
     
     
@@ -965,7 +970,7 @@ body{
 
 
 .all{
-  width: 85%;
+  width: 100%;
 }
 
 
