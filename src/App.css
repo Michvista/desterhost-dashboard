@@ -247,7 +247,9 @@ body{
   .projectbox{
     width: 70%;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-top: 30px;
 
   }
@@ -285,6 +287,11 @@ body{
   border-bottom: 1px solid #DFDFDF;
 }
 
+#tab{
+  border-bottom: "1px solid #DFDFDF";
+  width: 100%;
+
+}
 .tickettable{
   margin-top: 0px;
 }
@@ -375,7 +382,6 @@ body{
   padding: 10px;
   box-sizing: border-box;
   resize: none;
-  border-radius: 7px;
 }
 
 .ticketsinpu, .cateinpu, .dateinpu{
@@ -418,7 +424,7 @@ body{
     border: none;
     outline: none;
     font-size: 14.5px;
-    width: 180px;
+    width:70%;
     
   }
 
@@ -481,7 +487,7 @@ body{
 .organinput input{
     border: none;
     outline: none;
-  
+  width: 70%;
     
 }
   
@@ -492,7 +498,6 @@ body{
     max-width: 100%;
     width: 320px;
     display: flex;
-
     gap: 8px;
 
 }
@@ -679,22 +684,321 @@ body{
   
 }
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:1300px) and (min-width:700px){
+
+  
+    .img{
+        width: 80%;
+    }
+
+    .num1{
+        font-size: 17px;
+    }
+
+    .secondrow, .thirdrow{
+        gap: 8px;
+    }
+
+    .usersbox{
+        padding: 8px;
+        
+        
+    }
+    .peopleinfo1  span{
+        font-size: 12px;
+
+    }
+
+    #select span{
+        font-size: 13px;
+    }
+
+    .userboxrow1, .userboxrow2{
+        gap: 5px;
+    }
+
+    .peopleinfo2  span img{
+        width: 8px;
+
+    }
+
+    .people span img{
+        width: 18px;
+    }
+
+
+    .carddetails span{
+      font-size: 15px;
+    }
     
+    .addpayment h5{
+      font-size: 15px;
+      margin-bottom: 0px;
+    }
+
+  
+
+
+.freeplan{
+  padding: 15px;
+  border-radius: 8px;
+  border-radius: 10px;
+  background-color: rgba(244, 244, 248, 0.50);
+  width: 100%;
+  
+}
+
+.atm{
+  width: 80%;
+}
+
+
+.firstlast, .mailphone{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ 
+}
+.username, .bio{
+  margin: auto;
+}
+
+
+.projectbox{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+
+.projectall{
+  width: 60%;
+  margin: auto;
+}
+
+#tab{
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#tab th, td{
+  font-size: 13px;
+}
+
+
+#check{
+  transform: scale(1.1);
+  border-color: #FAFAFA;
+  
+}
+
+.projectbox1{
+  width:60%;
+
+}
+
+#select p{
+  font-size: 15px;
+}
+
+
+.select{
+  width: 100%;
+}
+
+#select{
+  gap: 10px;
+}
+
+
+
+.secondrow, .thirdrow{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.secondrow1, .secondrow2, .thirdrow1, .thirdrow2{
+  width: 100%;
+}
+
+
+.all{
+  width: 60%;
+}
+
+    
+  }
+
+
+  @media screen and (max-width:700px) and (min-width:320px) {
+
+
+
     .bug input, .machine input, .api input, .uplo, .dob textarea{
       font-size: 12px;
+      border-radius: 11px;
       padding: 13px;
     }
 
     .summaryall span{
       font-size: 13px;
-    }
 
+    }
     
-.summaryall{
-  width: 90%;
+   .summaryall{
+   width: 87%;
+  }
+
+  
+  .billdetails, .atmdetails, .acctdetails, .orgadetails{
+    width: 87%;
+  }
+  
+.billingplans{
+  display: flex;
+   flex-direction: column;
+}
+
+.carddetails span{
+  font-size: 14px;
+}
+
+.addpayment h5{
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.freeplan{
+  padding: 15px;
+  border-radius: 8px;
+  border-radius: 10px;
+  background-color: rgba(244, 244, 248, 0.50);
+  width: 100%;
+  
+}
+
+.remove h4 {
+  font-size: 14px;
+}
+
+.atm{
+  width: 100%;
+}
+
+.firstlast, .mailphone{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+.username, .bio{
+  margin: auto;
+ 
+}
+
+
+.projectbox{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+
+.projectall{
+  width: 85%;
+  margin: auto;
+}
+
+#tab{
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+#tab th, td{
+  font-size: 13px;
+}
+
+
+#check{
+  transform: scale(1.1);
+  border-color: #FAFAFA;
+  
+}
+
+.projectbox1{
+  width:80%;
 
 }
+
+#select p{
+  font-size: 13px;
+}
+
+
+.select{
+  width: 100%;
+}
+
+#select{
+  gap: 10px;
+}
+
+
+.secondrow, .thirdrow{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.secondrow1, .secondrow2, .thirdrow1, .thirdrow2{
+  width: 100%;
+}
+
+
+.all{
+  width: 85%;
+}
+
+
+.fom{
+  width: 85%;
+  margin:auto;
+}
+
+
+  }
+
+
+  @media screen and (max-width:320px) {
+
+    .username, .bio{
+      margin: auto;
+     
+    }
+    
+    
+.butt{
+  display: flex;
+  flex-direction: column;
+}
+    
   }
   
      
