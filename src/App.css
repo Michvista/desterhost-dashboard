@@ -753,26 +753,20 @@ body{
 }
 
 
-
-
-
 .projectbox{
-  width: 70%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  
  
 }
 
 
 .projectall{
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
-#tab{
+    #tab{
   max-width: 100%;
   overflow-x: auto;
 }
@@ -788,10 +782,6 @@ body{
   
 }
 
-.projectbox1{
-  width:60%;
-
-}
 
 #select p{
   font-size: 15px;
@@ -806,12 +796,6 @@ body{
   gap: 10px;
 }
 
-
-
-.secondrow, .thirdrow{
-  display: flex;
-  flex-direction: column;
-}
 
 
 
