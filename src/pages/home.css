@@ -783,6 +783,7 @@ td{
     }
     .content{
         margin: 3rem; 
+width:100% !important;
     }
     .menu
     {
