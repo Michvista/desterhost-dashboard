@@ -278,6 +278,8 @@ body{
     display: flex;
     gap: 5px;
   }
+
+
 #tab th, td{
   padding: 15px;
 }
@@ -287,14 +289,16 @@ body{
   border-bottom: 1px solid #DFDFDF;
 }
 
-#tab{
-  border-bottom: "1px solid #DFDFDF";
-  width: 100%;
 
+.tableall{
+  width: 100%;
+  overflow-x: auto;
 }
-.tickettable{
-  margin-top: 0px;
+
+#tab{
+  width: 100%;
 }
+
 
 .plus{
   display: flex;
@@ -764,11 +768,7 @@ body{
   margin: auto;
 }
 
-    #tab{
-  max-width: 100%;
-  overflow-x: auto;
-}
-
+   
 #tab th, td{
   font-size: 13px;
 }
@@ -917,13 +917,13 @@ body{
 
 
 .projectall{
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 
 #tab{
   width: 100%;
-  overflow-x: auto;
+
 }
 
 
@@ -939,7 +939,7 @@ body{
 }
 
 .projectbox1{
-  width:80%;
+  width:86%;
 
 }
 
