@@ -746,13 +746,7 @@ td{
   }
 
 @media screen and (max-width: 1280px) {
-    .TwoCards{
-        width: 120%;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-        margin-bottom: 1rem
-    }
+   
     .insightsChart{
         width: 65rem;
     }
@@ -815,5 +809,17 @@ width:100% !important;
     }
     .accDetails .accImgDetails .backdropBgAcc img {
         object-fit:cover;
+    }
+	 .TwoCards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin-bottom: 1rem
+    }
+
+	.insightsChart{
+        width: 100%;
+	overflow-x:auto;
     }
 }
