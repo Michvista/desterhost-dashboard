@@ -775,6 +775,8 @@ td{
     .sidebar.desktop{
         display: none;
     }
+
+	.activeDomains
 	
 	 .TwoCards{
         width: 120%;
@@ -792,7 +794,7 @@ td{
 	overflow-x:auto;
 }
 	
-	.insightsChart{
+	.insightsChart, .activeDomains, .table{
         width: 120%;
 	overflow-x:auto;
     }
