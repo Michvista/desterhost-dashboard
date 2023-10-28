@@ -143,7 +143,6 @@ const yinu = (Task)=>{
 </div>
 
        
-<div className="tickettable">
 
 
     {/*
@@ -310,7 +309,7 @@ const yinu = (Task)=>{
     </div>}
 
         
-</div>
+
 
         </div>
     );
