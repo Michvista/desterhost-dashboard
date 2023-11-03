@@ -436,7 +436,7 @@ td{
 .remediationProgress,
 .avgProgress,
 .totalPagesProgress{
-    width: 13rem;
+    width: 100%;
     background: var(--lightBlue);
     border-radius: 7px;
 }
@@ -777,7 +777,7 @@ td{
     }
 
 	.TwoCards{
-        width: 80%;
+        width: 86%;
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
@@ -786,7 +786,7 @@ td{
     }
 	
 .accountCard{
-    width:80%;
+    width:86%;
     height: 22rem;
     border-radius: 12px;
     box-shadow: 0px 2px 24px 10px rgba(0, 0, 0, 0.08);
@@ -794,8 +794,8 @@ overflow-x:auto;
 margin:auto;
 }
 	
-	.insightsChart, .activeDomains, .table{
-        width: 80%;
+	.insightsChart, .activedomains, .table{
+        width: 86%;
 	overflow-x:auto;
 	margin:auto;
     }
@@ -836,7 +836,7 @@ width:100% !important;
         object-fit:cover;
     }
 	 .TwoCards{
-        width: 80%;
+        width: 86%;
 	margin:auto; 
         flex-direction: column;
         align-items: center;
@@ -844,14 +844,14 @@ width:100% !important;
         margin-bottom: 1rem
     }
 
-	.insightsChart, .table, .activeDomains{
-        width: 80%;
+	.insightsChart, .table, .activedomains{
+        width: 86%;
 	overflow-x:auto;
 	margin:auto;
 	}
 	
 	.table{
-		width:80%;
+		width:86%;
 		margin:auto;
 	}
 }
