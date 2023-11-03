@@ -827,6 +827,12 @@ width:100% !important;
     .content{
         padding-bottom: 30rem;
     }
+
+	.billHistory{
+        width:100%;
+	overflow-x:auto;
+
+	}
 } 
 @media screen and (max-width: 650px) {
     .content{
@@ -850,8 +856,5 @@ width:100% !important;
 	margin:auto;
 	}
 	
-	.table{
-		width:86%;
-		margin:auto;
-	}
+	
 }
