@@ -203,7 +203,7 @@ function Home() {
                 </Nav.Item>
                </div>
                 </Nav>
-                  <Col sm={9} className='mx-5 mobile my-4'>
+                  <Col sm={9} className='mobile my-4'>
                   <Tab.Content>
                   <Tab.Pane eventKey="domains">
                         <p className='display-1'>
@@ -858,7 +858,7 @@ function Home() {
                <Billing />
                 </Tab.Pane>
                 <Tab.Pane eventKey="billHist">
-                    <div className="billHistory w-100">
+                    <div className="billHistory">
                         <div className="filter">
                           <span>Filter</span>  <i class="fa-solid fa-filter"></i> <i class="fa-solid fa-caret-down"></i>
                         </div>
