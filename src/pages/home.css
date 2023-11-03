@@ -779,7 +779,7 @@ td{
 	.activeDomains
 	
 	 .TwoCards{
-        width: 100%;
+        width: 85%;
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
@@ -787,7 +787,7 @@ td{
     }
 	
 .accountCard{
-    width: 100%;
+    width: 85%;
     height: 22rem;
     border-radius: 12px;
     box-shadow: 0px 2px 24px 10px rgba(0, 0, 0, 0.08);
@@ -795,7 +795,7 @@ td{
 }
 	
 	.insightsChart, .activeDomains, .table{
-        width: 100%;
+        width: 85%;
 	overflow-x:auto;
     }
     .content{
@@ -817,7 +817,7 @@ width:100% !important;
         margin-bottom: 3rem;
     }
     .accTabs .accTabsCont {
-        width: 100%;
+        width: 85%;
         box-shadow: 0px 1px 13px 9px rgba(0, 0, 0, 0.08);
         padding: 20px;
         border-radius: 7px;
@@ -834,15 +834,15 @@ width:100% !important;
         object-fit:cover;
     }
 	 .TwoCards{
-        width: 100%;
+        width: 85%;
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
         margin-bottom: 1rem
     }
 
-	.insightsChart{
-        width: 100%;
+	.insightsChart, .table, .activeDomains{
+        width: 85%;
 	overflow-x:auto;
-    }
+	}
 }
