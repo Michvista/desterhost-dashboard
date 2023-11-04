@@ -743,9 +743,7 @@ td{
     color: var(--mainBg);
   }
 
-.inviteme{
-	width:100%:
-}
+
 @media screen and (max-width: 1280px) {
    
     .insightsChart{
@@ -830,7 +828,7 @@ width:100% !important;
         padding-bottom: 30rem;
     }
 
-	.billHistory, .inviteme{
+	.billHistory{
         width:100%;
 	overflow-x:auto;
 
