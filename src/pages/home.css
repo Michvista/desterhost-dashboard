@@ -794,7 +794,7 @@ overflow-x:auto;
 margin:auto;
 }
 	
-	.insightsChart, .activedomains, .table{
+	.insightsChart, .activedomains, .table, .flex{
         width: 90%;
 	overflow-x:auto;
 	margin:auto;
@@ -825,8 +825,8 @@ width:100% !important;
     }
     
 
-	.billHistory{
-        width:100%;
+	.billHistory, .inv{
+        width:90%;
 	overflow-x:auto;
 
 	}
