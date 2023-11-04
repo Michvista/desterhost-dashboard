@@ -60,6 +60,7 @@ height: -webkit-fill-available;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items:center;
 }
 .nav-pills .nav-item .nav-link.custom{
     color: #222;
@@ -846,6 +847,24 @@ margin:auto;
 
 	}
 
+	.imgs{
+		display:none;
+	}
+	.text{
+	text-align:center;
+	}
+.user{
+	display:flex;
+	gap:12px;
+}
+.others{
+display:flex !important;
+align-items:center;
+justify-content:center;
+gap:20x;
+width:100%;
+	
+}
 	
 } 
 @media screen and (max-width: 650px) {
