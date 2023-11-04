@@ -106,7 +106,7 @@ function Home() {
                             <Col sm={8}>
                             <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
-                                <Nav.Link  eventKey="first"><img src="domains.png" alt=''/></Nav.Link>
+                                <Nav.Link  eventKey="first"></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                 <Nav.Link eventKey="second"><img src="reports.png" alt="" /></Nav.Link>
