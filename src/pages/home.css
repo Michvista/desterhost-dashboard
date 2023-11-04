@@ -861,8 +861,8 @@ margin:auto;
 display:flex !important;
 align-items:center;
 justify-content:center;
+justify-content:space-evenly;
 gap:20x;
-width:100%;
 	
 }
 	
