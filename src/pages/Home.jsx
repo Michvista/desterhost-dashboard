@@ -106,7 +106,7 @@ function Home() {
                             <Col sm={8}>
                             <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
-                                <Nav.Link  eventKey="first"></Nav.Link>
+                                <Nav.Link  eventKey="first"><img src="domains.png" alt=""/></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                 <Nav.Link eventKey="second"><img src="reports.png" alt="" /></Nav.Link>
@@ -142,6 +142,7 @@ function Home() {
                          <Tab.Container defaultActiveKey="domains">
             <Row>
                 <Nav variant="pills">
+                <div className="flexi">
                <div className="flex">
                <Nav.Item>
                     <Nav.Link eventKey="domains">
@@ -201,6 +202,7 @@ function Home() {
                         </div>
                     </Nav.Link>
                 </Nav.Item>
+                   </div>
                   </div>
                 </Nav>
                   <Col sm={9} className='mx-5 mobile my-4'>
