@@ -837,11 +837,15 @@ margin:auto;
 	    
     }
     .flex{
-	    width:120%;
-	 overflow-x: auto;
-	    margin:auto;
+	    width:100%;
+	 
     }
-
+	
+.flexi{
+width:100%;
+overflow-x:auto;
+}
+	
 	.billHistory, .inv{
         width:90%;
 	overflow-x:auto;
@@ -888,11 +892,13 @@ gap:20x;
 	margin:auto;
 	}
 
-	
-.flex{
-width:120%;
+	    .flex{
+	    width:100%;
+	 
+    }
+.flexi{
+width:100%;
 overflow-x:auto;
-margin:auto;
 }
 	
 
