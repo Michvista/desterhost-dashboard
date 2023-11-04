@@ -142,7 +142,6 @@ function Home() {
                          <Tab.Container defaultActiveKey="domains">
             <Row>
                 <Nav variant="pills">
-              
                <div className="flex">
                <Nav.Item>
                     <Nav.Link eventKey="domains">
@@ -202,7 +201,6 @@ function Home() {
                         </div>
                     </Nav.Link>
                 </Nav.Item>
-               
                   </div>
                 </Nav>
                   <Col sm={9} className='mx-5 mobile my-4'>
