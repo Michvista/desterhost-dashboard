@@ -459,7 +459,7 @@ td{
   }
 
   .contentChart{
-    width: 65rem;
+    width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
@@ -837,13 +837,18 @@ margin:auto;
     }
     .flex{
 	    width:100%;
-	    overflow-x:auto;
+	 
     }
 
 	.billHistory, .inv{
         width:90%;
 	overflow-x:auto;
 
+	}
+
+	.flexi{
+		width:100%:
+		overflow-x: auto;
 	}
 } 
 @media screen and (max-width: 650px) {
