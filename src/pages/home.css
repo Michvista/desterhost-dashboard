@@ -760,7 +760,7 @@ td{
         width: 98%;
     }
     .firstrow{
-       width: 60rem;
+       width: 100%;
       }      
       .secondrow, .thirdrow {
         gap: 15px;
@@ -800,7 +800,6 @@ margin:auto;
 	margin:auto;
     }
     .content{
-        margin: .5rem; 
 width:100% !important;
     }
     .menu
@@ -824,9 +823,7 @@ width:100% !important;
         border-radius: 7px;
 	    
     }
-    .content{
-        padding-bottom: 30rem;
-    }
+    
 
 	.billHistory{
         width:100%;
@@ -835,9 +832,7 @@ width:100% !important;
 	}
 } 
 @media screen and (max-width: 650px) {
-    .content{
-        padding-bottom: 45rem;
-    }
+    
     .accDetails .accImgDetails .backdropBgAcc img {
         object-fit:cover;
     }
