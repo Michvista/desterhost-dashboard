@@ -769,6 +769,7 @@ function Home() {
             <Tab.Content>
                 <Tab.Pane eventKey="OrgDetails"><Organ/></Tab.Pane>
                 <Tab.Pane eventKey="InvMem">
+                    <div className="inv w-100">
                 <table class="table w-100 invTable">
                             <thead>
                                 <tr>
@@ -819,7 +820,7 @@ function Home() {
                                 </tr>
                             </tbody>
                                 </table>
-                                 
+                                 </div>
                                 <div className="inviteMembersForm">
                                 <button className='btn btn-primary me-3 p-2'>Save Changes</button>
                                 <button className='btn btn-outline-primary p-2'>Cancel</button>
