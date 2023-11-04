@@ -211,6 +211,8 @@ img{
 }
 .TwoCards{
     width: 100%;
+    display:flex !important;
+  justify-content:space-between;
 }
 .usageLimit,
 .domainScore{
@@ -750,7 +752,9 @@ td{
     color: var(--mainBg);
   }
 
-
+    .dummyGraph{
+        width: 98%;
+    }
 @media screen and (max-width: 1280px) {
    
     .insightsChart{
