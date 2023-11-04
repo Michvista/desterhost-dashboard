@@ -820,11 +820,12 @@ function Home() {
                                 </tr>
                             </tbody>
                                 </table>
-                                 </div>
+                                 
                                 <div className="inviteMembersForm">
                                 <button className='btn btn-primary me-3 p-2'>Save Changes</button>
                                 <button className='btn btn-outline-primary p-2'>Cancel</button>
                                 </div>
+                        </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="ExpData">trd tab content</Tab.Pane>
             </Tab.Content>
