@@ -837,7 +837,7 @@ margin:auto;
     }
     .flex{
 	    width:100%;
-	 
+	 overflow-x: auto;
     }
 
 	.billHistory, .inv{
@@ -846,10 +846,7 @@ margin:auto;
 
 	}
 
-	.flexi{
-		width:100%:
-		overflow-x: auto;
-	}
+	
 } 
 @media screen and (max-width: 650px) {
     
