@@ -808,7 +808,7 @@ margin:auto;
 	.section {
 		width:90%;
 		margin:auto;
-		margin-left:25px;
+		margin-left:15px;
 	}
 		
 	.content{
@@ -865,6 +865,11 @@ margin:auto;
 	overflow-x:auto;
 	margin:auto;
 	}
+.flex{
+	    width:100%;
+	    overflow-x:auto;
+    }
+	
 
 	
 	
