@@ -178,7 +178,13 @@ img{
     justify-self: center;
     text-align: center;
 }
-.flex,
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .tableHead{
     width: 100%;
     display: flex;
@@ -802,6 +808,7 @@ margin:auto;
 	.section {
 		width:90%;
 		margin:auto;
+		margin-left:25px;
 	}
 		
 	.content{
@@ -828,9 +835,12 @@ margin:auto;
         border-radius: 7px;
 	    
     }
-    
+    .flex{
+	    width:100%;
+	    overflow-x:auto;
+    }
 
-	.billHistory, .inv, .flex{
+	.billHistory, .inv{
         width:90%;
 	overflow-x:auto;
 
