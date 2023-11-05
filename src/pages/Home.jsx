@@ -305,7 +305,7 @@ function Home() {
                                         <Row>
                                             <Col>
                                                 <Row>
-                                                <Nav variant="pills" className="flex-row">
+                                                <Nav variant="pills" className="mon flex-row">
                                                 <Nav.Item>
                                                     <Nav.Link eventKey="week" className='context-week'>7 days</Nav.Link>
                                                     </Nav.Item>
