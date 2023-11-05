@@ -146,6 +146,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width5:rem;
     
     
 }
@@ -172,7 +173,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    width:11rem;
     /* height: 100%; */
 }
 .domainContTab span{
@@ -470,8 +471,7 @@ td{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom:20px;
-     gap:10px;
+     
   }
   .contentChart .headingInsights{
     font-weight: 600;
